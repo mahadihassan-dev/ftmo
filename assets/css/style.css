@@ -1,0 +1,801 @@
+/* 
+    Theme: FTMO
+    Version: 1.0v
+    Designed and Developed by: Mahadi hassan
+*/
+
+/* 
+    ===========================
+            CSS Index
+    ===========================
+
+    1) Header Section
+
+*/
+
+/* Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Font Family */
+
+/* 
+    font-family: 'Mulish', sans-serif;
+*/
+
+/* Theme Core */
+:root {
+    --main-color: #2F2F2F;
+    --first-color: #202020;
+}
+
+/* Default CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    /* background: var(--main-color) !important; */
+    background: var(--first-color) !important;
+}
+
+a, 
+a:hover {
+    text-decoration: none !important;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Mulish', sans-serif;
+}
+
+span {
+    font-family: 'Mulish', sans-serif;
+}
+
+.ftmo_h2 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.clr {
+    clear: both;
+}
+
+/* .section_bg_color {
+    background: var(--first-color);
+} */
+/* Default CSS End */
+
+
+/* Header Section Start */
+.header__main {
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.header_social_media ul {
+    margin-bottom: 0;
+}
+.header_social_media ul li {
+    display: inline-block;
+}
+.header_social_media_icon {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: transparent;
+    display: block;
+    border-radius: 50%;
+    color: #fff;
+}
+.header_contact_block {
+    margin-bottom: 0;
+}
+.header_contact_block li {
+    display: inline-block;
+    color: #fff;
+}
+.header_contact_call {
+    margin-bottom: 0;
+}
+.header_contact_block li:nth-last-child(2) {
+    margin-right: 10px;
+}
+.header_contact_call li {
+    display: inline-block;
+}
+.header_contact_email li {
+    display: inline-block;
+}
+.header_contact_call li:nth-last-child(2) {
+    margin-right: 10px;
+}
+.header_contact_email li:nth-last-child(2) {
+    margin-right: 10px;
+}
+.nav__signin_btn {
+    width: 111px;
+    height: 38px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 35px;
+}
+.nav__signin_btn:hover {
+    color: #fff;
+}
+/* Header Section End */
+
+/* Banner Section Start */
+.banner_main {
+    padding: 40px 0px;
+}
+.banner_btns {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+.banner_btns li {
+    display: inline-block;
+}
+.banner__btn {
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.banner_btns li:nth-last-child(1) {
+    margin-left: 24px;
+}
+.get_fund_btn {
+    background: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.get_fund_btn:hover {
+    color: #000;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 25%);
+    transform: translate(0px, -5px);
+}
+.demo_btn {
+    border: 2px solid #FF9900;
+    color: #ff9900;
+    background: transparent;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.demo_btn:hover {
+    color: #FF9900;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 25%);
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 25%);
+    transform: translate(0px, -5px);
+}
+.banner_content_left {
+    margin-top: 90px;
+}
+.banner_content_left h4, h1, p {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+}
+.banner_content_left h4 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.banner_content_left h1 {
+    font-size: 52px;
+    font-weight: 900;
+    margin-top: 18px;
+}
+
+.banner_content_left p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 18px;
+}
+/* Banner Section End */
+
+/* About Us Section Start */
+.about_main {
+    position: relative;
+}
+.about_main::before {
+    position: absolute;
+    content: url(../images/shape.png);
+    bottom: 0;
+    right: 0;
+}
+.title_effect {
+    color: #FF9900;
+    position: relative;
+}
+.title_effect::after {
+    position: absolute;
+    content: url(../images/section_title_yellow.png);
+    top: 0px;
+    left: 185px;
+}
+
+.video_playback {
+    width: 780px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    margin-top: 55px;
+}
+.video_playback::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #ff99002e;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+}
+.video_playback img {
+    width: 100%;
+    height: 100%;
+}
+.video_playback a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 52px;
+    color: #fff;
+    z-index: 999;
+}
+/* About Us Section End */
+
+/* Fund Section Start*/
+.trade_program_main {
+    position: relative;
+    margin-top: 70px;
+    padding: 60px 0px;
+}
+.trade_program_main::before {
+    position: absolute;
+    content: '';
+    width: 230px;
+    height: 780px;
+    background: #262729;
+    top: 9px;
+    right: 0;
+    box-shadow: 4px 0px 5px rgb(0 0 0 / 25%);
+}
+.trade_program_main::after {
+    position: absolute;
+    content: url(../images/Vector\ 5.png);
+    top: 0;
+    right: 230px;
+    z-index: -1;
+}
+/* .trade_program_main::after {
+    position: absolute;
+    content: '';
+    background: url(../images/Vector\ 5.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+} */
+.trade_head h2 {
+    font-family: 'Mulish';
+    font-size: 36px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 45px;
+}
+.fund_title {
+    color: #FF9900;
+}
+.trade_head p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.fund_policy h3 {
+    font-size: 25px;
+    font-family: 'Mulish', sans-serif;
+    color: #FF9900;
+    font-weight: 700;
+}
+.fund_policy {
+    width: 433px;
+    margin: auto;
+}
+.fund_policy p {
+    font-size: 20px;
+}
+.how_it_works_effect::after {
+    left: 135px;
+}
+.how_it_works_main {
+    position: relative;
+    margin-top: 135px;
+}
+.how_it_works_main::after {
+    position: absolute;
+    content: url(../images/shape.png);
+    bottom: 0;
+    right: 0;
+}
+/* Fund Section End*/
+
+/* Price Plan Section Start */
+.price_plan_main {
+    margin-top: 100px;
+}
+.price_planner_head {
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Mulish';
+    font-weight: 800;
+    position: relative;
+}
+.price_planner_head::before {
+    position: absolute;
+    content: url(../images/arrow-line-with-circle.png);
+    top: -26px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.price_tag {
+    float: left;
+}
+.price_money_icon {
+    float: right;
+}
+.price_plan_card {
+    width: 392px;
+}
+.price_box {
+    background: #414141;
+    padding: 20px 25px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.price_tag p {
+    font-size: 20px;
+}
+.price_tag h2 {
+    color: #fff;
+    font-size: 26px;
+}   
+.price_tag h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+.membership_fee_box {
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 348px;
+    height: 138px;
+    padding: 15px 5px;
+    margin: auto;
+}
+.membership_fee_box span {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Mulish';
+    font-weight: 700;
+}
+.membership_fee_box h2 {
+    font-size: 38px;
+    font-family: 'Mulish';
+    font-weight: 800;
+    color: #FF9900;
+}
+.membership_fee_rate ul li {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+.membership_fee_rate ul li::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #FF9900;
+    top: 10px;
+    left: -18px;
+    border-radius: 50%;
+}
+.membership_monthly_fee span {
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+.membership_fee_rate ul {
+    margin-left: 35px;
+}
+.membership_buy_btn {
+    display: block;
+    width: 247px;
+    height: 58px;
+    text-align: center;
+    margin: auto;
+    line-height: 58px;
+    border: 1.5px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Mulish';
+    border-radius: 30px;
+    margin-top: 24px;
+}
+.price_plan_card {
+    width: 350px;
+    background: #655B5B;
+    border-radius: 12px;
+    padding-bottom: 25px;
+}
+.membership_fee_box {
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 325px;
+    height: 138px;
+    padding: 15px 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.membership_monthly_fee span {
+    font-size: 18px;
+    font-family: 'Mulish';
+    font-weight: 700;
+}
+.price_money_icon img {
+    margin-top: 60px;
+}
+.monthly_fee span {
+    display: inline-block;
+}
+.monthly_fee {
+    color: #FF9900 !important;
+    font-size: 26px !important;
+}
+a.membership_buy_btn:hover {
+    color: #fff;
+}
+.price_plan_card_Main {
+    margin-top: 180px;
+    position: relative;
+    background: #262729;
+    padding-bottom: 65px;
+}
+.price_plan_card_Main::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 290px;
+    background: url(../images/price-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -115px;
+    left: 0;
+    z-index: -1;
+}
+.price_plan_card_Main::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 290px;
+    background: rgba(0,0,0, .3);
+    top: -115px;
+    left: 0;
+    z-index: -1;
+}
+/* Price Plan Section End */
+
+/* Mobile App Branding Section Start */
+.download_app_title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.download_app {
+    background: var(--main-color);
+    position: relative;
+    padding-bottom: 60px;
+}
+.download_app::after {
+    position: absolute;
+    content: url(../images/download_app_after.png);
+    bottom: 70px;
+    left: 0;
+}
+.download_app_img {
+    text-align: center;
+}
+.app_download_btn {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.app_download_btn li {
+    display: inline-block;
+}
+.app_download_link.text-right h2 {
+    color: #fff;
+    font-size: 40px;
+}
+.app_download_link {
+    margin-top: 280px;
+}
+.download_app_img img {
+    margin-top: 25px;
+}
+/* Mobile App Branding Section End */
+
+/* Choose Section Start */
+.choose_us_main::before {
+    position: absolute;
+    content: url(../images/bg-shape-2.png);
+    top: -110px;
+    left: 275px;
+}
+.choose_us_main::after {
+    position: absolute;
+    content: '';
+    width: 275px;
+    height: 1203px;
+    background: #2f2f2f;
+    box-shadow: -55px 0px 70px -15px rgb(0 0 0 / 50%);
+    top: -38px;
+    left: 0;
+}
+.choose_us_main {
+    position: relative;
+}
+.choose_us_title {
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Mulish';
+    font-weight: 800;
+    position: relative;
+}
+.choose_us_title::after {
+    position: absolute;
+    content: url(../images/section-title-white.png);
+    top: 0;
+    left: 305px;
+}
+.choose_us_card {
+    width: 410px;
+    text-align: justify;
+    margin: auto;
+}
+.choose_card_title h3 {
+    color: #FF9900;
+    font-size: 24px;
+    text-align: center;
+}
+.choose_us_card p {
+    font-size: 18px;
+}
+.choose_us_main {
+    position: relative;
+    margin-top: 160px;
+}
+#chooseus {
+    position: relative;
+}
+.choose_us_caontainer::before {
+    position: absolute;
+    content: url(../images/shape.png);
+    top: 480px;
+    left: 0;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+/* Choose Section End */
+
+/* Fund Section Start */
+.get_fund_main_section {
+    margin-top: 200px;
+}
+h2.withdrawl_section_title {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Mulish';
+    font-weight: 800;
+}
+.counter {
+    font-size: 40px;
+    color: #FF9900;
+    font-family: 'Mulish';
+    font-weight: 800;
+}
+.fund_history h3 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Mulish';
+}
+.fund_history p {
+    font-size: 18px;
+    font-family: 'Mulish';
+    font-weight: 600;
+}
+.fund_history::after {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-left: 1px solid #868686;
+    content: '';
+    height: 55px;
+}
+.fund_history {
+    position: relative;
+}
+.fund_history_last::after {
+    display: none;
+}
+.fund_col_container {
+    padding: 10px;
+    background: #2F2F2F;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px rgb(0 0 0 / 25%);
+}
+.payouts_head h2 {
+    color: #2F2F2F;
+    font-size: 36px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    margin-top: 45px;
+}
+.payouts_gateouts {
+    background: #fff;
+    padding: 60px 0px;
+    position: relative;
+}
+.payouts_gateouts::after {
+    position: absolute;
+    content: url(../images/shape-frame.png);
+    top: 0;
+    right: 0;
+}
+.payouts_slider .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.payouts_slider .slick-dots li {
+    display: inline-block;
+}
+.payouts_image img {
+    margin: auto;
+}
+.payouts_slider .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    margin: 0px 5px;
+    border-radius: 50%;
+}
+.payouts_slider .slick-dots .slick-active>button {
+    background: #6C6767;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+/* Fund Section End */
+
+/* Footer Section Start*/
+.footer_newsletter_email {
+    width: 273px;
+    height: 48px;
+    padding: 10px 32px;
+    border: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.footer_newsletter {
+    margin-top: 15px;
+}
+.footer_newsletter ul li {
+    display: inline-block;
+}
+.footer_newsletter_subscribe_btn {
+    width: 155px;
+    height: 48px;
+    border: 0;
+    background: #FF9900;
+    font-size: 14px;
+    font-weight: 700;
+    color: #010101;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    margin-left: -5px;
+}
+.footer_col_title {
+    color: #FF9900;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Mulish';
+}
+.footer_short_link li a {
+    font-family: 'Mulish';
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.footer_social_media_icon li a {
+    color: #fff;
+}
+.footer_social_media_icon li a span {
+    font-size: 16px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    margin-left: 5px;
+}
+.footer_addres p {
+    font-size: 16px;
+    font-family: 'Mulish';
+    font-weight: 700;
+}
+a.footer_email {
+    color: #fff;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer_contact ul,
+.footer_social_media_icon{
+    margin-top: 20px;
+}
+ul.footer_short_link li {
+    margin: 5px 0px;
+}
+ul.footer_social_media_icon li {
+    margin: 5px 0px;
+}
+.footer_main {
+    position: relative;
+    background: #fff;
+    padding: 201px;
+    z-index: 1;
+}
+.footer_main::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/wave-shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+/* Footer Section End*/

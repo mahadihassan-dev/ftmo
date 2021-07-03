@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
     <!-- Venobox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/venobox@1.9.3/venobox/venobox.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
 </head>
 <body>
     <!-- Header Section Start -->
@@ -72,7 +76,7 @@
                                         <li>
                                             <i class="fas fa-envelope"></i>
                                         </li>
-                                        <li>
+                                        <li class="header_email_hide">
                                             info@ftmo.com
                                         </li>
                                     </ul>
@@ -92,27 +96,27 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                         <a class="navbar-brand" href="index.html">
-                            <img src="./assets/images/logo_ftmo.png" alt="site logo; main logo; site identity;" class="img-fluid">
+                            <img src="./assets/images/logo_ftmo.png" alt="site logo; main logo; site identity;" class="img-fluid mobile_site_logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link text-white" href="#">Get started</a>
+                                <li class="nav-item">
+                                    <a class="nav-link nav_link_item" href="#">Get started</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">How it works</a>
+                                    <a class="nav-link nav_link_item" href="#">How it works</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">About</a>
+                                    <a class="nav-link nav_link_item" href="#">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Resources</a>
+                                    <a class="nav-link nav_link_item" href="#">Resources</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav__signin_btn">Sign In</a>
+                                    <a href="#" class="btn btn-outline-primary nav__signin_btn">Sign In</a>
                                 </li>
                             </ul>
                         </div>
@@ -128,7 +132,7 @@
             <div class="banner_content">
                 <div class="row">
                     <!-- Banner Content Left -->
-                    <div class="col-7">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="900" data-aos-duration="500">
                         <!-- banner Content left -->
                         <div class="banner_content_left">
                             <h4>Our Fund, Your Profit</h4>
@@ -143,7 +147,7 @@
                         </div>
                     </div>
                     <!-- Banner Content Right -->
-                    <div class="col-5">
+                    <div class="col-md-6" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="900" data-aos-duration="500">
                         <div class="banner_content_right">
                             <img src="./assets/images/banner-app-img.png" alt="banner apps" class="img-fluid">
                         </div>
@@ -160,12 +164,12 @@
             <!-- Section Head -->
             <div class="row">
                 <div class="col-12">
-                    <h2 class="ftmo_h2">Get an Idea <br> <span class="title_effect">About us</span></h2>
+                    <h2 class="ftmo_h2">Get an Idea <br> <span class="title_effect about_us_effect">About us</span></h2>
                 </div>
             </div>
             <!-- Video Playback Section -->
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down" data-aos-offset="500" data-aos-duration="500">
                     <div class="video_playback text-center">
                         <img src="./assets/images/video_playback.png" alt="video playback" class="img-fluid">
                         <a href="https://youtu.be/awthtMPV1Rw" class="venobox video_playback_playbtn">
@@ -179,7 +183,7 @@
     <!-- About Section End -->
 
     <!-- Trade Program Section Start -->
-    <section id="trade_program" class="trade_program_main">
+    <section id="trade_program" class="trade_program_main" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
         <div class="container">
             <!-- Trade Program Header -->
             <div class="row">
@@ -196,7 +200,7 @@
             </div>
             <!-- Fund Program list -->
             <div class="row mt-5">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="fund_policy">
                         <h3>Why is it Needed?</h3>
                         <p>
@@ -204,7 +208,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="fund_policy">
                         <h3>How does it work?</h3>
                         <p>
@@ -212,7 +216,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-6 mt-4">
+                <div class="col-md-6 mt-md-4">
                     <div class="fund_policy">
                         <h3>What is the benefits of it?</h3>
                         <p>
@@ -220,7 +224,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-6 mt-4">
+                <div class="col-md-6 mt-md-4">
                     <div class="fund_policy">
                         <h3>What is the ultimate goal?</h3>
                         <p>
@@ -269,7 +273,7 @@
                 <!-- Price Plan List -->
             <div class="row price_card_area">
                 <!-- Price Col-1 -->
-                <div class="col-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="500" data-aos-duration="505">
                     <div class="price_plan_card">
                         <div class="price_box">
                             <div class="price_tag">
@@ -305,7 +309,7 @@
                     </div>
                 </div>
                 <!-- Price Col-2 -->
-                <div class="col-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="500" data-aos-duration="510">
                     <div class="price_plan_card">
                         <div class="price_box">
                             <div class="price_tag">
@@ -341,7 +345,7 @@
                     </div>
                 </div>
                 <!-- Price Col-3 -->
-                <div class="col-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="500" data-aos-duration="515">
                     <div class="price_plan_card">
                         <div class="price_box">
                             <div class="price_tag">
@@ -396,13 +400,13 @@
             <!-- Download Section -->
             <div class="row">
                 <!-- App Image -->
-                <div class="col-7">
+                <div class="col-md-7" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="900" data-aos-duration="500">
                     <div class="download_app_img">
                         <img src="./assets/images/app-ui.png" alt="app ui; download app; download app section" class="img-fluid">
                     </div>
                 </div>
                 <!-- App Download Link -->
-                <div class="col-5">
+                <div class="col-md-5" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="900" data-aos-duration="500">
                     <div class="app_download_link text-right">
                         <h2>Get The App</h2>
                         <p>Available On</p>
@@ -418,7 +422,7 @@
     <!-- Mobile App Branding Section End -->
 
     <!-- Why Choose Us Section Start -->
-    <section id="chooseus" class="choose_us_main">
+    <section id="chooseus" class="choose_us_main"  data-aos="fade-right" data-aos-offset="500" data-aos-duration="500">
         <div class="container choose_us_caontainer">
             <!-- Choose main Title -->
             <div class="row">
@@ -431,7 +435,7 @@
             <!-- Choose Us Card -->
             <div class="row mt-5">
                 <!-- Card 1 -->
-                <div class="col-6 mt-5">
+                <div class="col-md-6 mt-5">
                     <div class="choose_us_card">
                         <div class="choose_us_card_image text-center mb-3">
                             <img src="./assets/images/icon-1.svg" alt="icon" class="img-fluid">
@@ -445,7 +449,7 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="col-6 mt-5">
+                <div class="col-md-6 mt-5">
                     <div class="choose_us_card">
                         <div class="choose_us_card_image text-center mb-3">
                             <img src="./assets/images/icon-2.svg" alt="icon" class="img-fluid">
@@ -459,7 +463,7 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="col-6 mt-5">
+                <div class="col-md-6 mt-5">
                     <div class="choose_us_card">
                         <div class="choose_us_card_image text-center mb-3">
                             <img src="./assets/images/icon-3.svg" alt="icon" class="img-fluid">
@@ -473,7 +477,7 @@
                     </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="col-6 mt-5">
+                <div class="col-md-6 mt-5">
                     <div class="choose_us_card">
                         <div class="choose_us_card_image text-center mb-3">
                             <img src="./assets/images/icon-4.svg" alt="icon" class="img-fluid">
@@ -487,7 +491,7 @@
                     </div>
                 </div>
                 <!-- Card 5 -->
-                <div class="col-6 mt-5">
+                <div class="col-md-6 mt-5">
                     <div class="choose_us_card">
                         <div class="choose_us_card_image text-center mb-3">
                             <img src="./assets/images/icon-5.svg" alt="icon" class="img-fluid">
@@ -502,7 +506,7 @@
                     </div>
                 </div>
                 <!-- Card 6 -->
-                <div class="col-6 mt-5">
+                <div class="col-md-6 mt-5">
                     <div class="choose_us_card">
                         <div class="choose_us_card_image text-center mb-3">
                             <img src="./assets/images/icon-6.svg" alt="icon" class="img-fluid">
@@ -531,27 +535,27 @@
                 </div>
             </div>
             <!-- fund History -->
-            <div class="fund_col_container mt-3">
-                <div class="row mt-4">
+            <div class="fund_col_container mt-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="500" data-aos-duration="500">
+                <div class="trade_row mt-4">
                     <!-- Col -1  -->
-                    <div class="col text-center">
-                        <div class="fund_history">
+                    <div class="trade_col text-center">
+                        <div class="fund_history account_trade">
                             <h3>2000+</h3>
                             <p>Accouts Funded <br>
                                 in 2020</p>
                         </div>
                     </div>
                     <!-- Col -2  -->
-                    <div class="col text-center">
-                        <div class="fund_history">
+                    <div class="trade_col text-center">
+                        <div class="fund_history country_trade">
                             <h3>132</h3>
                             <p>Countries represented in
                                 our trading community</p>
                         </div>
                     </div>
                     <!-- Col -3  -->
-                    <div class="col text-center">
-                        <div class="fund_history">
+                    <div class="trade_col text-center">
+                        <div class="fund_history trade_improve">
                             <h3>95%</h3>
                             <p>Of funded traders say
                                 that their trading
@@ -559,15 +563,15 @@
                         </div>
                     </div>
                     <!-- Col -4  -->
-                    <div class="col text-center">
-                        <div class="fund_history">
+                    <div class="trade_col text-center">
+                        <div class="fund_history trade_expert">
                             <h3>180</h3>
                             <p>Experts Traders
                                 in a team</p>
                         </div>
                     </div>
                     <!-- Col -5  -->
-                    <div class="col text-center">
+                    <div class="trade_col text-center">
                         <div class="fund_history fund_history_last">
                             <h3>4.7</h3>
                             <p>Trustpilot “Trustscore”
@@ -579,6 +583,157 @@
         </div>
     </section>
     <!-- Fund section End -->
+
+    <!-- Trustpilot Section Start -->
+    <section id="trustpilot_review" class="trustpilot_review_section">
+        <div class="container">
+            <div class="row">
+                <!-- trustpilot head -->
+                <div class="col-md-3" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="900" data-aos-duration="500">
+                    <div class="truspilot_head text-center">
+                        <img src="./assets/images/trustpilot_logo.svg" alt="" class="img-fluid">
+                        <ul class="trustpilot_star_rate">
+                            <li><img src="./assets/images/rate-star.png" alt="trustpilot 5star ratting" class="img-fluid"></li>
+                            <li><img src="./assets/images/rate-star.png" alt="trustpilot 5star ratting" class="img-fluid"></li>
+                            <li><img src="./assets/images/rate-star.png" alt="trustpilot 5star ratting" class="img-fluid"></li>
+                            <li><img src="./assets/images/rate-star.png" alt="trustpilot 5star ratting" class="img-fluid"></li>
+                            <li><img src="./assets/images/rate-star.png" alt="trustpilot 5star ratting" class="img-fluid"></li>
+                        </ul>
+                        <p style="font-weight: 800;">Excellent</p>
+                        <p>Based On <span style="font-weight: 800; border-bottom: 1.5px solid #202020;">111 reviews</span> </p>
+                    </div>
+                </div>
+                <!-- trustpilot testimonial Slider -->
+                <div class="col-md-9" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="900" data-aos-duration="500">
+                    <div class="trustpilot_slide_box">
+                        <div class="trustpilot_slide_row">
+                            <!-- Message col - 1 -->
+                            <div class="trustpilot_slide_col">
+                                <div class="trustpilot_profile_box">
+                                    <div class="trustpilot_user_icon">
+                                        <img src="./assets/images/noprofile-01.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="trustpilot_user_detail">
+                                        <p class="trustpilot_user_name">Jhonny Depp</p>
+                                        <span class="trustpilot_post_date">20/02/2020</span>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                                <ul class="trustpilot_user_box_rating">
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/trustindex-verified-icon.svg" alt="" class="img-fluid trustpilot_verified"></li>
+                                </ul>
+                                <div class="trustpilot_user_testimonial">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita doloribus nulla recusandae, tenetur quod!</p>
+                                </div>
+                            </div>
+                            <!-- Message col - 1 -->
+                            <div class="trustpilot_slide_col">
+                                <div class="trustpilot_profile_box">
+                                    <div class="trustpilot_user_icon">
+                                        <img src="./assets/images/noprofile-01.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="trustpilot_user_detail">
+                                        <p class="trustpilot_user_name">Jhonny Depp</p>
+                                        <span class="trustpilot_post_date">20/02/2020</span>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                                <ul class="trustpilot_user_box_rating">
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                    <li><img src="./assets/images/trustindex-verified-icon.svg" alt="" class="img-fluid trustpilot_verified"></li>
+                                </ul>
+                                <div class="trustpilot_user_testimonial">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita doloribus nulla recusandae, tenetur quod!</p>
+                                </div>
+                            </div>
+                           <!-- Message col - 1 -->
+                           <div class="trustpilot_slide_col">
+                            <div class="trustpilot_profile_box">
+                                <div class="trustpilot_user_icon">
+                                    <img src="./assets/images/noprofile-01.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="trustpilot_user_detail">
+                                    <p class="trustpilot_user_name">Jhonny Depp</p>
+                                    <span class="trustpilot_post_date">20/02/2020</span>
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+                            <ul class="trustpilot_user_box_rating">
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/trustindex-verified-icon.svg" alt="" class="img-fluid trustpilot_verified"></li>
+                            </ul>
+                            <div class="trustpilot_user_testimonial">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita doloribus nulla recusandae, tenetur quod!</p>
+                            </div>
+                        </div>
+                        <!-- Message col - 1 -->
+                        <div class="trustpilot_slide_col">
+                            <div class="trustpilot_profile_box">
+                                <div class="trustpilot_user_icon">
+                                    <img src="./assets/images/noprofile-01.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="trustpilot_user_detail">
+                                    <p class="trustpilot_user_name">Jhonny Depp</p>
+                                    <span class="trustpilot_post_date">20/02/2020</span>
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+                            <ul class="trustpilot_user_box_rating">
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/trustindex-verified-icon.svg" alt="" class="img-fluid trustpilot_verified"></li>
+                            </ul>
+                            <div class="trustpilot_user_testimonial">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita doloribus nulla recusandae, tenetur quod!</p>
+                            </div>
+                        </div>
+                        <!-- Message col - 1 -->
+                        <div class="trustpilot_slide_col">
+                            <div class="trustpilot_profile_box">
+                                <div class="trustpilot_user_icon">
+                                    <img src="./assets/images/noprofile-01.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="trustpilot_user_detail">
+                                    <p class="trustpilot_user_name">Jhonny Depp</p>
+                                    <span class="trustpilot_post_date">20/02/2020</span>
+                                </div>
+                                <div class="clr"></div>
+                            </div>
+                            <ul class="trustpilot_user_box_rating">
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/rate-star.png" alt="" class="img-fluid"></li>
+                                <li><img src="./assets/images/trustindex-verified-icon.svg" alt="" class="img-fluid trustpilot_verified"></li>
+                            </ul>
+                            <div class="trustpilot_user_testimonial">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita doloribus nulla recusandae, tenetur quod!</p>
+                            </div>
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trustpilot Section End -->
 
     <!-- Payout Gayouts Section Start -->
     <section id="payouts" class="payouts_gateouts">
@@ -656,7 +811,7 @@
             <!-- Footer Main Section Start -->
             <div class="row mt-5">
                 <!-- Footer Col-1 -->
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="footer_contact">
                         <h3 class="footer_col_title">Contact</h3>
                         <ul>
@@ -674,7 +829,7 @@
                     </div>
                 </div>
                 <!-- Footer Col-1 -->
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="footer_contact">
                         <h3 class="footer_col_title">Learn about FundedNext</h3>
                         <ul class="footer_short_link">
@@ -694,7 +849,7 @@
                     </div>
                 </div>
                 <!-- Footer Col-1 -->
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="footer_social_media">
                         <h3 class="footer_col_title">Get updates from</h3>
                         <ul class="footer_social_media_icon">
@@ -747,6 +902,8 @@
     <script type="text/javascript" src="https://mahedihassan.com/project/assets/js/6332f77505.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/venobox@1.9.3/venobox/venobox.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/wow.js@1.2.2/dist/wow.min.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
     <script>
         $(document).ready(function(){
@@ -754,6 +911,7 @@
                 framewidth: '400px',
                 frameheight: '300px',
             });
+            AOS.init();
         })
         $(document).ready(function(){
             // Counter Js

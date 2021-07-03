@@ -1,0 +1,27 @@
+@keyframes sticky_bounce {
+    20%,50%,80%,to {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    70% {
+        transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(-4px);
+    }
+    /* 100% {
+        transform: translateY(0);
+    } */
+}
+@-webkit-keyframes bg_spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes bg_spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -13,6 +13,9 @@
 
 */
 
+/* Keyframes are Imported */
+@import url(./keyframe.css);
+
 /* Google Fonts API */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 
@@ -75,6 +78,21 @@ span {
     clear: both;
 }
 
+.sticky_menu {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    background-color: #ffffffd9;
+    /* padding: 20px 0 !important; */
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s linear;
+    animation: sticky_bounce 1.5s linear 1;
+    animation-direction: alternate;
+}
+
+
+
 /* Default CSS End */
 
 
@@ -136,12 +154,19 @@ span {
     border-radius: 3px;
     color: #fff;
     margin-left: 35px;
+    margin-top: 3px;
 }
 .nav__signin_btn:hover {
     color: #fff;
 }
+.nav_link_item {
+    font-family: 'Mulish';
+    font-size: 18px;
+    color: #202020;
+    font-weight: 700;
+}
 .header_navbar {
-    background: var(--first-color);
+    /* background: var(--first-color); */
     box-shadow: 0px 4px 5px rgb(0 0 0 / 25%)
 }
 /* Header Section End */
@@ -174,12 +199,13 @@ span {
     background: rgba(59, 130, 246);
     color: #fff;
     border: 2px solid rgba(59, 130, 246);
-    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all .5s linear;
 }
 .get_fund_btn:hover {
     color: #f7f6f6;
     box-shadow: 0px 4px 5px rgb(0 0 0 / 25%);
-    transform: translate(0px, -5px);
+    /* transform: translate(0px, -5px); */
+    animation: sticky_bounce 2s linear 1;
     background: #007bff;
 }
 .demo_btn {
@@ -282,9 +308,9 @@ span {
     position: absolute;
     content: '';
     width: 230px;
-    height: 780px;
+    height: 778px;
     background: #262729;
-    top: 9px;
+    top: 10px;
     right: 0;
     box-shadow: 4px 0px 5px rgb(0 0 0 / 25%);
 }
@@ -349,7 +375,109 @@ span {
     bottom: 0;
     right: 0;
 }
+.trade_row {
+    display: flex;
+    flex-direction: row;
+}
+.trade_col {
+    width: 20%;
+}
 /* Fund Section End*/
+
+/* Trustpilot Section Start */
+.trustpilot_star_rate li {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 0px -1px;
+}
+.truspilot_head img {
+    width: 140px;
+}
+.truspilot_head p {
+    font-family: 'Mulish';
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.trustpilot_user_box_rating li {
+    width: 20px;
+    height: 20px;
+    margin: 2px 0px;
+    display: inline-block;
+    line-height: 20px;
+}
+.trustpilot_user_icon img {
+    border-radius: 50%;
+}
+.trustpilot_user_icon {
+    width: 40px;
+    height: 40px;
+}
+/* .trustpilot_profile_box {
+    display: inline-block;
+} */
+p.trustpilot_user_name {
+    margin-bottom: 0;
+}
+.trustpilot_profile_box {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.trustpilot_slide_row {
+    display: flex;
+    flex-direction: row;
+}
+.trustpilot_slide_col .slick-slide {
+    width: 222px !important;
+}
+.trustpilot_slide_col {
+    width: 33.33%;
+    background: #fff;
+    padding: 10px 12px;
+    box-shadow: 1px 1px 7px 0px rgb(0 0 0 / 15%), 0px 0px 2px 0px rgb(0 0 0 / 5%);
+    margin: 0px 2px;
+    border-radius: 2px;
+}
+.trustpilot_review_section {
+    padding: 60px 0px;
+    background: url(../images/BG-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.trustpilot_slide_row {
+    padding: 10px 0px;
+}
+.truspilot_head {
+    margin-top: 50px;
+}
+ul.trustpilot_user_box_rating {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.trustpilot_user_detail {
+    padding-left: 15px;
+}
+.trustpilot_arrow {
+    font-size: 25px;
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+}
+.trustpilot_arrow_next {
+    right: -15px;
+}
+.trustpilot_arrow_prev {
+    left: -15px;
+}
+.trustpilot_user_testimonial p {
+    font-size: 14px;
+}
+/* Trustpilot Section End */
 
 /* Price Plan Section Start */
 .price_plan_main {
@@ -375,14 +503,15 @@ span {
 .price_money_icon {
     float: right;
 }
-.price_plan_card {
+/* .price_plan_card {
     width: 392px;
-}
+} */
 .price_box {
     background: #414141;
     padding: 20px 25px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    position: relative;
 }
 .price_tag p {
     font-size: 20px;
@@ -496,31 +625,21 @@ a.membership_buy_btn:hover {
     position: relative;
     padding-bottom: 65px;
 }
-.price_plan_card_Main::before {
-    display: none;
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 290px;
-    background: url(../images/price-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: -115px;
-    left: 0;
-    z-index: -1;
-}
 .price_plan_card_Main::after {
-    display: none;
     position: absolute;
     content: '';
-    width: 100%;
-    height: 290px;
-    background: rgba(0,0,0, .3);
-    top: -115px;
-    left: 0;
+    width: 660px;
+    height: 660px;
+    background: #ff00002b;
+    top: 0;
+    left: 102px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     z-index: -1;
+    animation: bg_spin 10.5s linear infinite;
+    -webkit-animation: bg_spin 10.5s linear infinite;
+    animation-direction: reverse;
 }
+
 /* Price Plan Section End */
 
 /* Mobile App Branding Section Start */
@@ -554,6 +673,12 @@ a.membership_buy_btn:hover {
 .app_download_link.text-right h2 {
     color: #fff;
     font-size: 40px;
+}
+.app_download_link.text-right p {
+    font-size: 18px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    color: #fff;
 }
 .app_download_link {
     margin-top: 280px;
@@ -608,6 +733,9 @@ a.membership_buy_btn:hover {
 }
 .choose_us_card p {
     font-size: 18px;
+    color: #fff;
+    font-family: 'Mulish';
+    font-weight: 400;
 }
 .choose_us_main {
     position: relative;
@@ -632,7 +760,7 @@ a.membership_buy_btn:hover {
 }
 h2.withdrawl_section_title {
     font-size: 30px;
-    color: #fff;
+    color: #202020;
     font-family: 'Mulish';
     font-weight: 800;
 }
@@ -649,9 +777,10 @@ h2.withdrawl_section_title {
     font-family: 'Mulish';
 }
 .fund_history p {
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Mulish';
     font-weight: 600;
+    color: #fff;
 }
 .fund_history::after {
     position: absolute;
@@ -666,6 +795,22 @@ h2.withdrawl_section_title {
 }
 .fund_history_last::after {
     display: none;
+}
+.country_trade::after {
+    right: 5px;
+}
+.account_trade::after {
+    right: 15px;
+}
+.trade_improve::after {
+    right: -3px;
+}
+.trade_expert::after {
+    right: -4px;
+}
+.fund_history {
+    position: relative;
+    padding: 10px 15px;
 }
 .fund_col_container {
     padding: 10px;
@@ -774,6 +919,7 @@ h2.withdrawl_section_title {
     font-size: 16px;
     font-family: 'Mulish';
     font-weight: 700;
+    color: #fff;
 }
 a.footer_email {
     color: #fff;
@@ -830,5 +976,6 @@ ul.footer_social_media_icon li {
     font-family: 'Mulish';
     font-size: 13px;
     font-weight: 700;
+    color: #fff;
 }
 /* Footer Copyright Section End */

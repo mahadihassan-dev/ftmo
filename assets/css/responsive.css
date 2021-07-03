@@ -2,15 +2,457 @@
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    
+@media (max-width: 576px) {
+    .header_contact_block li.header_phn_hide {
+        display: none !important;
+    }
+    .header_contact_block li.header_email_hide {
+        display: none !important;
+    }
+    .mobile_site_logo {
+        width: 140px;
+        height: 26px;
+    }
+    .choose_us_main::after {
+        position: absolute;
+        content: '';
+        width: 275px;
+        height: 1203px;
+        background: #2f2f2f;
+        box-shadow: -55px 0px 70px -15px rgb(0 0 0 / 50%);
+        top: -38px;
+        left: 0;
+        display: none;
+    }
+    .choose_us_main::before {
+        position: absolute;
+        content: url(../images/bg-shape-2.png);
+        top: -110px;
+        left: 0px;
+    }
+    .video_playback {
+        width: 346px;
+        height: 190px;
+        margin: auto;
+        position: relative;
+        margin-top: 30px;
+    }
+    .title_effect::after {
+        position: absolute;
+        content: url(../images/section_title_yellow.png);
+        top: 0px;
+        left: 185px;
+        display: none;
+    }
+    .about_main::before {
+        position: absolute;
+        content: url(../images/shape.png);
+        bottom: -55px;
+        right: 0;
+    }
+    .fund_policy {
+        width: 300px;
+        margin: auto;
+    }
+    .price_planner_head::before {
+        position: absolute;
+        content: '';
+        top: -26px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../images/arrow-line-with-circle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 370px;
+        height: 8px;
+    }
+    .trade_program_main::before,
+    .trade_program_main::after {
+        display: none;
+    }
+    .trade_program_main {
+        position: relative;
+        margin-top: 70px;
+        padding: 60px 0px;
+        background: #202020;
+    }
+    .banner_content_left {
+        margin-top: 0px;
+    }
+    .banner__btn {
+        display: block;
+        width: 137px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .banner_btns li:nth-last-child(1) {
+        margin-left: 10px;
+    }
+    .banner_btns {
+        margin-bottom: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .how_it_works_main::after {
+        position: absolute;
+        content: url(../images/shape.png);
+        bottom: -60px;
+        right: 0;
+        z-index: -1;
+    }
+    .download_app::after {
+        bottom: 180px;
+        z-index: -1;
+    }
+    .download_app {
+        z-index: 1;
+    }
+    .app_download_link {
+        margin-top: 20px;
+    }
+    .app_download_btn li {
+        width: 170px;
+    }
+    .app_download_btn {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .choose_us_card {
+        width: 340px;
+        text-align: justify;
+        margin: auto;
+        margin-top: -35px;
+    }
+    .choose_us_main::before {
+        position: absolute;
+        content: url(../images/bg-shape-2.png);
+        top: -110px;
+        left: 0px;
+        display: none;
+    }
+    .choose_us_main {
+        position: relative;
+        margin-top: 160px;
+        background: #2f2f2f;
+        padding: 60px 0px;
+    }
+    .choose_us_title::after {
+        display: none;
+    }
+    .choose_us_caontainer::before {
+        display: none;
+    }
+    .trade_row {
+        display: flex;
+        flex-direction: column;
+    }.trade_col {
+        width: 100%;
+    }
+    .fund_history::after {
+        display: none;
+    }
+    .truspilot_head {
+        margin-bottom: 30px;
+    }
+    .footer_main {
+        position: relative;
+        background: #fff;
+        padding: 45px 10px;
+        z-index: 1;
+    }
+    .price_plan_card_Main::after {
+        display: none;
+    }
+    .price_plan_card {
+        width: 350px;
+        background: #655B5B;
+        border-radius: 12px;
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (max-width: 768px) {
+    .header_contact_block li.header_phn_hide {
+        display: none !important;
+    }
+    .header_contact_block li.header_email_hide {
+        display: none !important;
+    }
+    .mobile_site_logo {
+        width: 140px;
+        height: 26px;
+    }
+    .choose_us_main::after {
+        position: absolute;
+        content: '';
+        width: 275px;
+        height: 1203px;
+        background: #2f2f2f;
+        box-shadow: -55px 0px 70px -15px rgb(0 0 0 / 50%);
+        top: -38px;
+        left: 0;
+        display: none;
+    }
+    .choose_us_main::before {
+        position: absolute;
+        content: url(../images/bg-shape-2.png);
+        top: -110px;
+        left: 0px;
+    }
+    .video_playback {
+        width: 480px;
+        height: 260px;
+        margin: auto;
+        position: relative;
+        margin-top: 30px;
+    }
+    .title_effect::after {
+        position: absolute;
+        content: '';
+        top: 24px;
+        left: 140px;
+        background: url(../images/section_title_yellow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 566px;
+        height: 10px;
+    }
+    .about_us_effect::after {
+        width: 530px;
+        left: 165px;
+    }
+    .about_main::before {
+        position: absolute;
+        content: url(../images/shape.png);
+        bottom: -55px;
+        right: 0;
+    }
+    .fund_policy {
+        width: 300px;
+        margin: auto;
+    }
+    .price_planner_head::before {
+        position: absolute;
+        content: '';
+        top: -26px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../images/arrow-line-with-circle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 715px;
+        height: 15px;
+    }
+    .trade_program_main::before,
+    .trade_program_main::after {
+        display: none;
+    }
+    .trade_program_main {
+        position: relative;
+        margin-top: 70px;
+        padding: 60px 0px;
+        background: #202020;
+    }
+    .banner_content_left {
+        margin-top: 0px;
+    }
+    .banner__btn {
+        display: block;
+        width: 155px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .banner_btns li:nth-last-child(1) {
+        margin-left: 10px;
+    }
+    .banner_btns {
+        margin-bottom: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .how_it_works_main::after {
+        position: absolute;
+        content: url(../images/shape.png);
+        bottom: -60px;
+        right: 0;
+        z-index: -1;
+    }
+    .download_app::after {
+        bottom: 180px;
+        z-index: -1;
+    }
+    .download_app {
+        z-index: 1;
+    }
+    .app_download_link {
+        margin-top: 160px;
+    }
+    .app_download_btn li {
+        width: 130px;
+    }
+    .app_download_btn {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .choose_us_card {
+        width: 340px;
+        text-align: justify;
+        margin: auto;
+        margin-top: -35px;
+    }
+    .choose_us_main::before {
+        position: absolute;
+        content: url(../images/bg-shape-2.png);
+        top: -110px;
+        left: 0px;
+        display: none;
+    }
+    .choose_us_main {
+        position: relative;
+        margin-top: 160px;
+        background: #2f2f2f;
+        padding: 60px 0px;
+    }
+    .choose_us_title::after {
+        position: absolute;
+        content: '';
+        top: 20px;
+        left: 305px;
+        background: url(../images/section-title-white.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 410px;
+        height: 10px;
+    }
+    .choose_us_caontainer::before {
+        display: none;
+    }
+    .trade_row {
+        display: flex;
+        flex-direction: column;
+    }.trade_col {
+        width: 100%;
+    }
+    .fund_history::after {
+        display: none;
+    }
+    .truspilot_head {
+        margin-bottom: 30px;
+    }
+    .footer_main {
+        position: relative;
+        background: #fff;
+        padding: 45px 10px;
+        z-index: 1;
+    }
+    .price_plan_card_Main::after {
+        display: none;
+    }
+    .price_plan_card {
+        width: 350px;
+        background: #655B5B;
+        border-radius: 12px;
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+    .membership_buy_btn {
+        display: block;
+        width: 171px;
+        height: 58px;
+        text-align: center;
+        margin: auto;
+        line-height: 58px;
+        border: 1.5px solid #fff;
+        font-size: 14px;
+        color: #fff;
+        font-family: 'Mulish';
+        border-radius: 30px;
+        margin-top: 24px;
+    }
+    .price_plan_card {
+        width: 215px;
+        background: #655B5B;
+        border-radius: 12px;
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+    .membership_fee_box {
+        text-align: center;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        width: 200px;
+        height: 138px;
+        padding: 0px 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .membership_fee_rate ul li {
+        font-size: 13px;
+        color: #fff;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 700;
+        position: relative;
+    }
+    .membership_fee_rate ul li::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #FF9900;
+        top: 3px;
+        left: -18px;
+        border-radius: 50%;
+    }
+    .price_tag h1 {
+        font-size: 27px;
+        font-weight: 800;
+        color: #fff;
+    }
+    .price_tag h2 {
+        color: #fff;
+        font-size: 16px;
+    }
+    .price_tag p {
+        font-size: 13px;
+        color: #fff;
+    }
+    .price_money_icon img {
+        margin-top: 35px;
+        width: 34px;
+    }
+    .footer_main::after {
+        position: absolute;
+        content: '';
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/wave-shape.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}

@@ -3,15 +3,7 @@
 
 // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    ul.header_contact_call li:nth-last-child(1) {
-        display: none;
-    }
-    /* ul.header_contact_email li:nth-last-child(1) {
-        display: none;
-    } */
-    .header_phn_hide {
-        display: none;
-    }
+    
 }
 
 /* // Medium devices (tablets, 768px and up) */

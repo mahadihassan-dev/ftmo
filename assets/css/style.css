@@ -26,6 +26,7 @@
 :root {
     --main-color: #2F2F2F;
     --first-color: #202020;
+    --body-color: #20202000;
 }
 
 /* Default CSS Start */
@@ -39,7 +40,8 @@
 
 body {
     /* background: var(--main-color) !important; */
-    background: var(--first-color) !important;
+    /* background: var(--first-color) !important; */
+    background: #f2f2f2 !important;
 }
 
 a, 
@@ -64,25 +66,23 @@ span {
 .ftmo_h2 {
     font-family: 'Mulish', sans-serif;
     font-size: 36px;
-    color: #fff;
+    color: #202020;
     font-weight: 800;
+    text-shadow: -2px -2px 12px rgb(0 0 0 / 25%);
 }
 
 .clr {
     clear: both;
 }
 
-/* .section_bg_color {
-    background: var(--first-color);
-} */
 /* Default CSS End */
 
 
 /* Header Section Start */
 .header__main {
     height: 50px;
-    line-height: 50px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    line-height: 50px;;
+    background: var(--first-color);
 }
 .header_social_media ul {
     margin-bottom: 0;
@@ -140,6 +140,10 @@ span {
 .nav__signin_btn:hover {
     color: #fff;
 }
+.header_navbar {
+    background: var(--first-color);
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 25%)
+}
 /* Header Section End */
 
 /* Banner Section Start */
@@ -167,15 +171,16 @@ span {
     margin-left: 24px;
 }
 .get_fund_btn {
-    background: #fff;
-    color: #000;
-    border: 2px solid #fff;
+    background: rgba(59, 130, 246);
+    color: #fff;
+    border: 2px solid rgba(59, 130, 246);
     transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .get_fund_btn:hover {
-    color: #000;
+    color: #f7f6f6;
     box-shadow: 0px 4px 5px rgb(0 0 0 / 25%);
     transform: translate(0px, -5px);
+    background: #007bff;
 }
 .demo_btn {
     border: 2px solid #FF9900;
@@ -193,7 +198,7 @@ span {
     margin-top: 90px;
 }
 .banner_content_left h4, h1, p {
-    color: #fff;
+    color: #202020;
     font-family: 'Mulish', sans-serif;
 }
 .banner_content_left h4 {
@@ -307,6 +312,9 @@ span {
     font-weight: 800;
     line-height: 45px;
 }
+.trade_head p {
+    color: #fff !important;
+}
 .fund_title {
     color: #FF9900;
 }
@@ -326,6 +334,7 @@ span {
 }
 .fund_policy p {
     font-size: 20px;
+    color: #fff;
 }
 .how_it_works_effect::after {
     left: 135px;
@@ -347,7 +356,7 @@ span {
     margin-top: 100px;
 }
 .price_planner_head {
-    color: #fff;
+    color: #202020;
     font-size: 36px;
     font-family: 'Mulish';
     font-weight: 800;
@@ -377,6 +386,7 @@ span {
 }
 .price_tag p {
     font-size: 20px;
+    color: #fff;
 }
 .price_tag h2 {
     color: #fff;
@@ -385,6 +395,7 @@ span {
 .price_tag h1 {
     font-size: 48px;
     font-weight: 800;
+    color: #fff;
 }
 .membership_fee_box {
     text-align: center;
@@ -481,12 +492,12 @@ a.membership_buy_btn:hover {
     color: #fff;
 }
 .price_plan_card_Main {
-    margin-top: 180px;
+    margin-top: 60px;
     position: relative;
-    background: #262729;
     padding-bottom: 65px;
 }
 .price_plan_card_Main::before {
+    display: none;
     position: absolute;
     content: '';
     width: 100%;
@@ -500,6 +511,7 @@ a.membership_buy_btn:hover {
     z-index: -1;
 }
 .price_plan_card_Main::after {
+    display: none;
     position: absolute;
     content: '';
     width: 100%;
@@ -681,7 +693,7 @@ h2.withdrawl_section_title {
 }
 .payouts_slider .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: -55px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -799,3 +811,24 @@ ul.footer_social_media_icon li {
     z-index: -1;
 }
 /* Footer Section End*/
+
+/* Footer Copyright Section Start */
+.footer_copyright {
+    background: #2F2F2F;
+    position: relative;
+}
+.footer_copyright::before {
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 0;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.35);
+    width: 100%;
+    z-index: 1;
+}
+.footer_copyright_text {
+    font-family: 'Mulish';
+    font-size: 13px;
+    font-weight: 700;
+}
+/* Footer Copyright Section End */

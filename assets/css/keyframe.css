@@ -1,5 +1,10 @@
+/* Sticy Bounce animation */
+
 @keyframes sticky_bounce {
-    20%,50%,80%,to {
+    20%,
+    50%,
+    80%,
+    to {
         transform: translateY(0);
     }
     40% {
@@ -15,13 +20,18 @@
         transform: translateY(0);
     } */
 }
-@-webkit-keyframes bg_spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
+
+
+/* Spin Animation */
+
 @keyframes bg_spin {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes bg_spin {
+    100% {
+        -webkit-transform: rotate(360deg);
     }
 }
